@@ -1,6 +1,5 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-// import img from '../../images/Rectangle 396.png';
 import img from '../../images/Rectangle 406.png';
 import img1 from '../../images/Rectangle 407.png';
 import img2 from '../../images/Rectangle 408.png';
