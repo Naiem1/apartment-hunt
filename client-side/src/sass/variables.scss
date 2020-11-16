@@ -1,0 +1,13 @@
+$main-background: #ffff;
+$light: #ffff;
+$dark: #000;
+$gray: #747474;
+$full-size: 100%;
+$poppins: 'poppins', sans-serif;
+$breakpoint-tablet: 768px;
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
