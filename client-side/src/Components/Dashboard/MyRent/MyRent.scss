@@ -1,0 +1,31 @@
+.my-rent-container {
+    background-color: #F4F7FC;
+
+    .table-container {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+
+        table {
+            width: 100%;
+            border-radius: 5px;
+    
+            th {
+                padding: 10px;
+                background-color: #F5F6FA;
+                color: #686868;
+                font-size: 12px;
+            }
+            td {
+                height: 50px;
+                font-size: 13px;
+                padding: 10px;
+            }
+            button {
+                background-color: #275A53;
+                font-size: 13px;
+                color: #fff;
+            }
+        }
+    }
+}

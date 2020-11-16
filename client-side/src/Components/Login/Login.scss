@@ -1,0 +1,48 @@
+.login {
+    border: 1px solid #dadada;
+    width: 350px;
+    padding: 25px;
+    border-radius: 5px;
+
+    h5 {
+        font-weight: 700;
+    }
+    form {
+        input {
+            width: 100%;
+            margin-top: 23px;
+            border: none;
+            border-bottom: 1px solid #dadada;
+            font-size: 14px;
+            color: black;
+        }
+        input[type="submit"]{
+            background-color: #275A53;
+            color: #fff;
+            padding: 7px;
+        }
+        span {
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    }
+    p {
+        font-size: 12px;
+        margin-top: 5px;
+        span {
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+        }
+    }
+}
+.social-account {
+    border: 1px solid #dadada;
+    border-radius: 50px;
+    width: 300px;
+    height: 32px;
+    padding-top: 3px;
+    cursor: pointer;
+}
