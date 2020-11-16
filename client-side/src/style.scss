@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+@import './sass/variables.scss';
+
+
+
+/* =====================================================
+          ## HOME DETAILS STLTYING ##
+  ======================================================*/
+
+  .home-details {
+    background: $main-background;
+    width: $full-size;
+    height: auto;
+
+      // BANNER SECTION
+     .banner{
+      width: $full-size;
+      height: 200px;
+      background: url('./images/Rectangle 13.png');
+      background-size: cover;
+      background-position: bottom;
+      @include flex;
+      font-weight: 900;
+      font-family: sans-serif, 'Montserrat';
+      position: relative;
+      
+     }
+
+     h2 {
+       position: relative;
+       z-index: 4;
+       color: $light;
+     }
+
+     .banner::before {
+       content: '';
+       position: absolute;
+       width: $full-size;
+       height: $full-size;
+       top: 0;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       background: rgba(0, 0, 0, 0.7);
+       opacity: .9;
+     }
+
+    // INFO SECTION
+     .info-section {
+
+      // LEFT AREA
+      .left-area {
+        .main-imgBx {
+          width: 100%;
+          height: 300px;
+          padding: 0 10px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fit;
+        }
+
+        .mini-imgBx {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 10px;
+          margin-top: 20px;
+        }
+
+        .imgBx {
+          width: 22%;
+        }
+
+        img {
+          object-fit: cover;
+        }
+
+        .text-content {
+          margin-top: 50px;
+          padding: 0 10px;
+          font-family: $poppins;
+
+          & {
+            font-size: 18px;
+            color: $gray;
+          }
+
+          h3 {
+            color: $dark;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+
+          .appartment-type {
+            h2 {
+              font-weight: bold;
+              color: $dark;
+              margin-bottom: 15px;
+            }
+            
+          }
+        }
+      }
+
+      // RIGHT AREA
+      .right-area {
+       
+        .form-container {
+         width: 100%;
+         padding: 20px;
+         background: #F4F4F4;
+        
+          form {
+            width: 100%;
+ 
+            input, textarea {
+              width: 100%;
+              height: 40px;
+              border: none;
+              outline: none;
+              margin-top: 15px;
+              padding: 0 10px;
+              box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+              color: #333; 
+            }
+ 
+            textarea {
+              height: 131px;
+              resize: none;
+              padding-top: 10px;
+            }
+           input[type="submit"] {
+             background: #275A53;
+             color: $light;
+             font-family: $poppins;
+             font-size: 13px;
+             letter-spacing: 1px;
+             font-weight: normal;
+           }
+ 
+           input::placeholder,
+           textarea::placeholder {
+             color: #333;
+             font-family: $poppins;
+             font-size: 14px;
+           }
+ 
+           input[type="submit"]:focus{
+             box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.9);
+             font-size: 12px;
+           }
+            
+          }
+        }
+      }
+     }
+
+     
+  }
